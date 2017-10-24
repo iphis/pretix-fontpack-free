@@ -7,6 +7,17 @@ from pretix.plugins.ticketoutputpdf.signals import register_fonts
 def fontpack_free(sender, **kwargs):
     basepath = 'pretix_fontpackfree'
     return {
+        "Inconsolata": {
+            "regular": {
+                "woff": basepath + "/inconsolata-regular-webfont.woff",
+                "woff2": basepath + "/inconsolata-regular-webfont.woff2",
+            },
+            "bold": {
+                "truetype": basepath + "/inconsolata-bold-webfont.ttf",
+                "woff": basepath + "/inconsolata-bold-webfont.woff",
+                "woff2": basepath + "/inconsolata-bold-webfont.woff2",
+            }
+        },
         "Noto Sans": {
             "regular": {
                 "truetype": basepath + "/NotoSans-Regular-webfont.ttf",
