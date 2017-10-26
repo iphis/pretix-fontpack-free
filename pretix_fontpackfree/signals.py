@@ -9,11 +9,12 @@ def fontpack_free(sender, **kwargs):
     return {
         "Inconsolata": {
             "regular": {
+                "truetype": basepath + "/Inconsolata-Regular.ttf",
                 "woff": basepath + "/inconsolata-regular-webfont.woff",
                 "woff2": basepath + "/inconsolata-regular-webfont.woff2",
             },
             "bold": {
-                "truetype": basepath + "/inconsolata-bold-webfont.ttf",
+                "truetype": basepath + "/Inconsolata-Bold.ttf",
                 "woff": basepath + "/inconsolata-bold-webfont.woff",
                 "woff2": basepath + "/inconsolata-bold-webfont.woff2",
             }
